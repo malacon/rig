@@ -1,0 +1,16 @@
+require('json2ify')
+require('es5-shimify')
+require('jqueryify')
+require("lib/jquery.html5form")
+require("lib/jquery.ui")
+require("lib/jquery.layout")
+require("lib/jquery.layout.resizeAccordion")
+
+require('spine')
+require('spine/lib/local')
+require('spine/lib/ajax')
+require('spine/lib/manager')
+require('spine/lib/route')
+require('spine/lib/tmpl')
+
+require('lib/list')

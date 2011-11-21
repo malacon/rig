@@ -1,0 +1,5 @@
+<li class="item <%= @type %>">
+  <%= @name %>
+  <% if @type isnt "cards": %><img height="40" src="img/<%= @imgSm %>" /><% end %>
+</li>
+

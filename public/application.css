@@ -1,0 +1,283 @@
+@import './normalize.css';
+@import './layout.css';
+@import './jqueryui.css';
+.button {
+  cursor: pointer;
+  color: #333;
+}
+.button:active {
+  background: #dadada;
+  -moz-box-shadow: inset 0 0 10px #9c9c9c;
+  -webkit-box-shadow: inset 0 0 10px #9c9c9c;
+  -moz-box-shadow: inset 0 0 10px #9c9c9c;
+  -webkit-box-shadow: inset 0 0 10px #9c9c9c;
+  box-shadow: inset 0 0 10px #9c9c9c;
+}
+a.button {
+  color: #00f;
+}
+ul.nav {
+  margin: 0;
+  padding: 0;
+}
+ul.nav li {
+  display: inline;
+  border-right: 1px solid #000;
+  padding: 20px;
+  line-height: 25px;
+}
+.ui-accordion .ui-accordion-content {
+  padding: 0;
+}
+.ui-accordion .ui-accordion-header {
+  padding-left: 20px;
+}
+.ui-layout-west,
+.ui-layout-center {
+  padding: 0;
+  margin: 0;
+}
+.ui-layout-west ul.nav,
+.ui-layout-center ul.nav,
+.ui-layout-west header,
+.ui-layout-center header {
+  color: #9c9c9c;
+  border-bottom: 1px solid rgba(0,0,0,0.30);
+  font-weight: bold;
+  text-shadow: 0 1px 1px #fff;
+  font-size: 14px;
+  background: #e0e0e1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e1));
+  background: -moz-linear-gradient(top, #fff, #e0e0e1);
+  background: linear-gradient(top, #fff, #e0e0e1);
+  -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.10);
+  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.10);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.10);
+  overflow: hidden;
+}
+.ui-layout-west .content,
+.ui-layout-center .content {
+  padding: 10px;
+}
+.ui-layout-west .content h2,
+.ui-layout-center .content h2 {
+  margin: 0;
+  padding: 0;
+}
+.ui-layout-north {
+  margin: 0;
+  padding: 0;
+}
+.ui-layout-north h1 {
+  margin: 0;
+  padding: 0;
+}
+.ui-layout-north .help {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cart,
+.showItem,
+.editItem,
+.checkoutWindow {
+  display: none;
+}
+.active {
+  display: block !important;
+}
+.ui-layout-center {
+  position: relative;
+}
+.ui-layout-center > *:not(.active) {
+  display: none;
+}
+ul.itemsList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.itemsList li {
+  height: 50px;
+  padding: 0 15px;
+  line-height: 50px;
+  font-weight: bold;
+  border-bottom: 1px solid #d2d2d1;
+  color: #333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: right;
+}
+ul.itemsList li img {
+  float: left;
+  padding: 5px;
+}
+ul.itemsList li.active {
+  color: #fff;
+  text-shadow: 0 -1px 1px #46677f;
+  background: #4775b8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7bb5db), to(#4775b8));
+  background: -moz-linear-gradient(top, #7bb5db, #4775b8);
+  background: linear-gradient(top, #7bb5db, #4775b8);
+  border-bottom-color: #609fd0;
+  -moz-box-shadow: inset 0 2px 2px #4775b8;
+  -webkit-box-shadow: inset 0 2px 2px #4775b8;
+  -moz-box-shadow: inset 0 2px 2px #4775b8;
+  -webkit-box-shadow: inset 0 2px 2px #4775b8;
+  box-shadow: inset 0 2px 2px #4775b8;
+}
+ul.itemsList .slicks {
+  background: #efba2f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d6b211), to(#efba2f));
+  background: -moz-linear-gradient(top, #d6b211, #efba2f);
+  background: linear-gradient(top, #d6b211, #efba2f);
+}
+ul.itemsList .profiles {
+  background: #5ab505;
+  background: -webkit-gradient(linear, left top, left bottom, from(#88c50e), to(#5ab505));
+  background: -moz-linear-gradient(top, #88c50e, #5ab505);
+  background: linear-gradient(top, #88c50e, #5ab505);
+}
+ul.itemsList .misc {
+  background: #af1611;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d6021a), to(#af1611));
+  background: -moz-linear-gradient(top, #d6021a, #af1611);
+  background: linear-gradient(top, #d6021a, #af1611);
+}
+ul.purchasedList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.purchasedList li {
+  height: 50px;
+  padding: 0 15px;
+  line-height: 30px;
+  font-weight: bold;
+  border-bottom: 1px solid #d2d2d1;
+  color: #333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+ul.purchasedList li img {
+  float: left;
+  padding: 5px;
+}
+/*  Form Items */
+form {
+  border-bottom: 1px solid #d2d2d1;
+}
+button {
+  border: 1px solid #bbb;
+  font-weight: bold;
+  text-shadow: 0 1px 1px #fff;
+  font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
+  font-size: 14px;
+  color: #363636;
+  padding: 6px 10px;
+  margin: 1px 1px 1px 0;
+  outline: none;
+  background: #f9f9f9;
+  background: #e3e3e3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#e3e3e3));
+  background: -moz-linear-gradient(top, #f9f9f9, #e3e3e3);
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 1px 1px #fff;
+  -webkit-box-shadow: 0 1px 1px #fff;
+  box-shadow: 0 1px 1px #fff;
+}
+button:active {
+  background: #f9f9f9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e3e3e3), to(#f9f9f9));
+  background: -moz-linear-gradient(top, #e3e3e3, #f9f9f9);
+  background: linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+button.default {
+  color: #fff;
+  border: 1px solid #3f68a5;
+  text-shadow: 0 -1px 1px #46677f;
+  background: #4775b8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7bb5db), to(#4775b8));
+  background: -moz-linear-gradient(top, #7bb5db, #4775b8);
+  background: linear-gradient(top, #7bb5db, #4775b8);
+}
+button.default:active {
+  background: #7bb5db;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4775b8), to(#7bb5db));
+  background: -moz-linear-gradient(top, #4775b8, #7bb5db);
+  background: linear-gradient(top, #4775b8, #7bb5db);
+}
+label {
+  display: block;
+  margin: 0 0 20px 0;
+  overflow: visible;
+}
+label span {
+  display: block;
+  margin-bottom: 6px;
+  margin-left: -3px;
+  font-weight: bold;
+  font-size: 13px;
+}
+label input {
+  font-size: 14px;
+  display: block;
+}
+label input[type="checkbox"] {
+  width: 15px !important;
+  margin-right: 7px;
+  display: inline-block;
+}
+label input[type="checkbox"] + span {
+  display: inline;
+}
+label input[type="text"],
+label input[type="email"],
+input[type="password"] {
+  width: 220px;
+  margin: 0 2px 0 0;
+  padding: 4px 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+textarea {
+  width: 220px;
+  margin: 0 2px 0 0;
+  padding: 4px 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 1px solid #9e9fa2;
+  color: #363636;
+  text-shadow: 0 1px 1px #fff;
+  font-size: 17px;
+  outline: none;
+  padding: 10px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background: #fafafa;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e6e6e7), to(#fafafa));
+  background: -moz-linear-gradient(top, #e6e6e7, #fafafa);
+  background: linear-gradient(top, #e6e6e7, #fafafa);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e6e6e7), color-stop(0.3, #fafafa), to(#fafafa));
+}
+textarea {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  height: 70px;
+}

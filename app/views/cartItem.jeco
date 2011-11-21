@@ -1,0 +1,9 @@
+<li class="item <%= @type %>">
+  
+  <% if @type isnt "cards": %><img height="40" src="img/<%= @imgSm %>" /><% end %>
+  <%= @quantity %> <%= @name %> <%= @type %>
+  $<%= @costMatrix[@quantity] %>
+  <div id="<%= @id %>" class="ui-icon ui-icon-trash remove button"></div>
+</li>
+
+

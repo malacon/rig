@@ -1,0 +1,18 @@
+<header>
+  <ul class="nav">
+    <li>Item Description</li>
+    <li class="showCart button">Go Back to Cart</li>
+    <% if @quantity <= 0: %>
+      <li class="edit button">Purchase</li>
+    <% else: %>
+      <li class="edit button">Edit</li>
+    <% end %>
+  </ul>
+</header>
+
+<div class="content">
+  <h2><%= @name %></h2>
+  <h3><em>Type: </em><%= @type %></h3>
+  <p>Quantity in cart: <%= @quantity %></p>
+  <img src="img/<%= @imgLg %>" />
+</div>
