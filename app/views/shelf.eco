@@ -1,7 +1,4 @@
 <header>
-  <ul class="nav">
-    <li>Shelf</li>
-  </ul>
 </header>
 
 <div id="accordion">

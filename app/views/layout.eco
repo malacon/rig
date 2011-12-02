@@ -1,6 +1,8 @@
-<div class="ui-layout-north ui-widget-header" style="display: none;">
-  <h1>Shopping Cart</h1>
-  <a class="help"><img width="42" src="img/question.png" /></a>
+<div class="ui-layout-north" style="display: none;">
+  <header>
+    <h1><img src="img/rig.png" />Online Print Order Form</h1>
+    <a class="help"><img width="42" src="img/question.png" />Help<br />Desk</a>
+  </header>
 </div>
 <div class="ui-layout-west" style="display: none;">
   <div id="shelf-accordion" class="basic">

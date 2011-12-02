@@ -17,9 +17,9 @@ class Spine.List extends Spine.Controller
     return unless item
     @current = item
     $(".itemsList").children().removeClass("active")
-
     #take out accordion people
-    $(".itemsList").children().forItem(@current).addClass("active")
+    
+    #$(".itemsList").children().forItem(@current).addClass("active")
   
   removeActive: =>
     @children().removeClass("active")

@@ -11,7 +11,7 @@ class App extends Spine.Controller
     super
     @html require('views/layout')
     myLayout = $('body').layout({
-      north__size:    50,
+      north__size:    65,
       west__size:     300,
       west__onresize:   $.layout.callbacks.resizePaneAccordions
     })

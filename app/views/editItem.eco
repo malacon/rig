@@ -14,6 +14,7 @@
     <label>
       <span>Quantity</span>
       <select name="quantity">
+        <option value="0">none</option>
         <%= @costMatrix %>
         <% for q, price of @costMatrix: %>
           <option value="<%= q %>" <% if @quantity is q: %>selected<% end %>><%= q %> for $<%= price %></option>

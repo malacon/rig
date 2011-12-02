@@ -1,7 +1,7 @@
 Spine = require('spine')
 
 class Item extends Spine.Model
-  @configure 'Item', 'name', 'type', 'costMatrix', 'quantity'
+  @configure 'Item', 'name', 'type', 'costMatrix', 'quantity', 'details'
 
   @endpoint: 'http://shawmoodle.org:9294/data.json'
 
