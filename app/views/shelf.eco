@@ -2,7 +2,7 @@
 </header>
 
 <div id="accordion">
-  <h3>Cards</h3>
+  <h3>Business Cards</h3>
   <div>
     <ul class="cards itemsList"></ul>
   </div>

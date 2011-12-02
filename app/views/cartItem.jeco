@@ -1,9 +1,9 @@
 <li class="item <%= @type %>">
-  
-  <% if @type isnt "cards": %><img height="40" src="img/<%= @imgSm %>" /><% end %>
-  <%= @quantity %> <%= @name %> <%= @type %>
-  $<%= @costMatrix[@quantity] %>
-  <div id="<%= @id %>" class="ui-icon ui-icon-trash remove button"></div>
+  Name: <em><%= @name %></em><br />
+  Type: <em><%= (@type.split(' ').map (word) -> word[0].toUpperCase() + word[1..-1].toLowerCase()).join ' ' %></em><br />
+  Quantity <em><%= @quantity %> for $<%= @costMatrix[@quantity] %></em><br />
+  <img src="img/<%= @imgLg %>" />
+  <button class="edit button">Edit</button>
 </li>
 
 

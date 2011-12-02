@@ -1,7 +1,7 @@
 <div class="ui-layout-north" style="display: none;">
   <header>
-    <h1><img src="img/rig.png" />Online Print Order Form</h1>
-    <a class="help"><img width="42" src="img/question.png" />Help<br />Desk</a>
+    <h1><img src="" />Online Print Order Form</h1>
+    <a class="help"><span>Help<br />Desk</span></a>
   </header>
 </div>
 <div class="ui-layout-west" style="display: none;">

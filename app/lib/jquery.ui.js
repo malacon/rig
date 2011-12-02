@@ -4326,8 +4326,8 @@ $.widget( "ui.accordion", {
 		fillSpace: false,
 		header: "> li > :first-child,> :not(li):even",
 		icons: {
-			header: "ui-icon-triangle-1-e",
-			headerSelected: "ui-icon-triangle-1-s"
+			header: "ui-icon-off",
+			headerSelected: "ui-icon-radio-off"
 		},
 		navigation: false,
 		navigationFilter: function() {

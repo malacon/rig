@@ -1,6 +1,11 @@
 Spine ?= require("spine")
 $      = Spine.$
 
+$.fn.forItem = (item, keep) ->
+  @filter ->
+    compare = $(@).item(keep)
+    item.eql?(compare) or item is compare
+
 class Spine.List extends Spine.Controller
   events:
     "click .item": "click"
@@ -18,8 +23,8 @@ class Spine.List extends Spine.Controller
     @current = item
     $(".itemsList").children().removeClass("active")
     #take out accordion people
-    
-    #$(".itemsList").children().forItem(@current).addClass("active")
+    #@log($(".itemsList").children())
+    $(".itemsList").children().forItem(@current).addClass("active")
   
   removeActive: =>
     @children().removeClass("active")

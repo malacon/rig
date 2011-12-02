@@ -29,8 +29,42 @@ ul.nav
   padding: 0
 
 .ui-accordion .ui-accordion-header
-  padding-left:20px
+  padding-left:25px
+  height: 35px
+  line-height: 35px
+  font-size: 16px
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 1px #ffffff;
+  vbg-gradient(#ffffff, #e0e0e1)
+  box-shadow(1px, 1px, 2px, rgba(0, 0, 0, 0.1))
+  overflow: hidden
 
+
+.ui-icon-off { display: none; }
+
+
+.ui-layout-north  
+  header
+    background: url(../img/rig.png) no-repeat center left 
+    height: 70px
+    padding-left:165px
+    border-bottom: 3px solid #EB8F00
+
+    h1
+      padding-top: 17px
+      color: #58585C
+
+    .help
+      background: url(../img/question.png) no-repeat center left
+      width: 100px
+      height: 70px
+
+      span
+        float: right
+        color: #58585C
+        padding: 20px 12px 0 0
+        font-weight: bold
+        font-size: 14px
 
 .ui-layout-west
 .ui-layout-center
@@ -52,11 +86,18 @@ ul.nav
     overflow: hidden
 
   .content
-    padding: 10px
+    padding: 40px
+    color: #9C9C9C;
+    font-weight: bold;
 
-    h2
-      margin: 0
-      padding: 0
+    em
+      color: #EB8F00;
+
+    button
+      position: absolute;
+      top: 85px
+      left: 380px
+      width: 88px
 
 
 .ui-layout-north
@@ -94,34 +135,28 @@ ul.itemsList
   list-style: none
 
   li
-    height: 50px
-    padding: 0 15px
-    line-height: 50px
+    height: 35px
+    padding: 0 0 0 50px
+    font-size: 14px
+    line-height: 35px
     font-weight: bold
     border-bottom: 1px solid #d2d2d1;
     color: #333;
-    ellipsis()
-    text-align: right
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 1px #ffffff;
+    vbg-gradient(#ffffff, #e0e0e1)
+    box-shadow(1px, 1px, 2px, rgba(0, 0, 0, 0.1))
+    overflow: hidden
+
     
     img
       float: left
       padding: 5px
   
     &.active
-      color: #ffffff;
-      text-shadow: 0 -1px 1px #46677f;
-      vbg-gradient( #7bb5db, #4775b8)
-      border-bottom-color: #609fd0;
-      inset-box-shadow(0, 2px, 2px, #4775b8)
+      background: url(../img/bubblesNav.png) no-repeat center right
+      
 
-  .slicks
-    vbg-gradient( #D6B211, #EFBA2F)
-
-  .profiles
-    vbg-gradient( #88C50E, #5AB505)
-    
-  .misc
-    vbg-gradient( #D6021A, #AF1611)
 
 ul.purchasedList
   margin: 0
@@ -129,17 +164,21 @@ ul.purchasedList
   list-style: none
 
   li
-    height: 50px
-    padding: 0 15px
-    line-height: 30px
+    height: 60px
+    padding: 10px 15px 10px 0
     font-weight: bold
-    border-bottom: 1px solid #d2d2d1;
+    border-bottom: 2px solid #d2d2d1;
     color: #333;
     ellipsis()
+    position: relative
     
     img
       float: left
       padding: 5px
+
+    button
+      top: 20px
+      left: 350px
 
 
 /*  Form Items */
