@@ -1,9 +1,10 @@
-<li class="item <%= @type %>">
+<li class="item <%= @type %>" id="<%= @id %>">
   Name: <em><%= @name %></em><br />
   Type: <em><%= (@type.split(' ').map (word) -> word[0].toUpperCase() + word[1..-1].toLowerCase()).join ' ' %></em><br />
   Quantity <em><%= @quantity %> for $<%= @costMatrix[@quantity] %></em><br />
   <img src="img/<%= @imgLg %>" />
-  <button class="edit button">Edit</button>
+  <button class="edit button" id="<%= @id %>">Edit</button>
 </li>
 
 
+  

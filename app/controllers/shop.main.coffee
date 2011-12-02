@@ -85,6 +85,7 @@ class Cart extends Spine.Controller
     'click .remove': 'removeItem'
     'click .edit': 'change'
     'click .empty': 'empty'
+    'hover .item': 'showImage'
 
   constructor: ->
     super
@@ -96,7 +97,7 @@ class Cart extends Spine.Controller
       template: require('views/cartItem'), 
       selectFirst: false
 
-    @list.bind 'change', @change
+    #@list.bind 'change', @change
     @list.bind 'destroy', @destroy
 
     Item.bind('refresh change', @render)
@@ -109,9 +110,20 @@ class Cart extends Spine.Controller
     totalCost = Item.calculateTotal()
     @total.html(require('views/total')(totalCost))
 
-  change: (item) =>
-    if item
-      Spine.trigger 'item:edit', item
+  # Pulls the item from the ID stored in the button and 
+  #   Loads the edit item screen
+  change: (e) =>
+    @item = Item.find($(e.target).attr('id'))
+    if @item
+      Spine.trigger 'item:edit', @item
+
+  # Should change the height of the li when hovered over and then return back when finished
+  showImage: (e) =>
+    @log($(e.target))
+    $(e.target).css('height', '100%')
+    @item = Item.find($(e.target).attr('id'))
+    if @item
+      @log(@item)
 
   checkout: =>
     if (Item.countInBasket() <= 0)
