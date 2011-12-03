@@ -85,7 +85,8 @@ class Cart extends Spine.Controller
     'click .remove': 'removeItem'
     'click .edit': 'change'
     'click .empty': 'empty'
-    'hover .item': 'showImage'
+    'mouseenter .item': 'showImage'
+    'mouseleave .item': 'hideImage'
 
   constructor: ->
     super
@@ -103,12 +104,16 @@ class Cart extends Spine.Controller
     Item.bind('refresh change', @render)
     @active -> 
       @render()
+    
+    $('img').hide()
 
   render: =>
     items = Item.purchased()
     @list.render(items)
+    $('img').hide()
     totalCost = Item.calculateTotal()
     @total.html(require('views/total')(totalCost))
+
 
   # Pulls the item from the ID stored in the button and 
   #   Loads the edit item screen
@@ -119,11 +124,12 @@ class Cart extends Spine.Controller
 
   # Should change the height of the li when hovered over and then return back when finished
   showImage: (e) =>
-    @log($(e.target))
-    $(e.target).css('height', '100%')
-    @item = Item.find($(e.target).attr('id'))
-    if @item
-      @log(@item)
+    imgId = '#img_' + $(e.target).attr('id')
+    $(imgId).slideDown("slow")
+
+  hideImage: (e) =>
+    imgId = '#img_' + $(e.target).attr('id')
+    $(imgId).slideUp("slow")
 
   checkout: =>
     if (Item.countInBasket() <= 0)

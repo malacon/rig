@@ -3,7 +3,7 @@ Spine = require('spine')
 class Item extends Spine.Model
   @configure 'Item', 'name', 'type', 'costMatrix', 'quantity', 'details'
 
-  @endpoint: 'http://shawmoodle.org:9294/data.json'
+  @endpoint: 'http://localhost:9294/data.json'
 
   @fetch: ->
     $.getJSON(@endpoint, (res) => @refresh(res, clear: true))

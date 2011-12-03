@@ -3,6 +3,8 @@
 @import './layout.css'
 @import './jqueryui.css'
 
+.hidden
+  display: none
 
 .button
   cursor: pointer
@@ -11,6 +13,112 @@
   &:active
     background: #dadada;
     inset-box-shadow(0, 0, 10px, #9c9c9c)
+
+@font-face 
+  font-family: 'UniversLTStd57Condensed'
+  src: url('fonts/universltstd_cn-webfont.eot')
+  src: url('fonts/universltstd_cn-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/universltstd_cn-webfont.woff') format('woff'), url('fonts/universltstd_cn-webfont.ttf') format('truetype'), url('fonts/universltstd_cn-webfont.svg#UniversLTStd57Condensed') format('svg')
+  font-weight: normal
+  font-style: normal
+
+@font-face 
+  font-family: 'UniversLTStd65Bold'
+  src: url('fonts/universltstd_bold-webfont.eot')
+  src: url('fonts/universltstd_bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/universltstd_bold-webfont.woff') format('woff'), url('fonts/universltstd_bold-webfont.ttf') format('truetype'), url('fonts/universltstd_bold-webfont.svg#UniversLTStd65Bold') format('svg')
+  font-weight: normal
+  font-style: normal
+
+.cardFront
+  margin-left: 340px
+  z-index: 10
+  background: #fff
+
+.cardBack
+  margin-top: 140px
+  z-index: 5
+  background: #F58025
+
+.businessCard
+  position: relative
+  height: 468px
+  padding: 5px
+  border: 1px dotted black
+  width: 900px
+
+.card
+  height: 325px
+  width: 555px
+  border: 1px solid black
+  font-size: .909em
+  position: absolute
+  line-height:120%
+  font-family: UniversLTStd57Condensed
+  font-weight: lighter
+  color: #807F83
+
+  .name
+    position: absolute
+    top: 30px
+    right: 50px
+
+    .who
+      color: #F58025
+      font-size: 18px
+      font-weight: normal
+      line-height: 180%
+      font-family: UniversLTStd65Bold
+
+  .logo
+    position: absolute
+    top: 136px
+    left: 46px
+    width: 160px
+    height: 60px
+    background: url(../img/img/rignet_700x400.png) no-repeat top left
+
+  .info
+    position: absolute
+    bottom: 40px
+    left: 50px
+
+    .numberType
+      font-size: 10px
+
+    .website
+      color: #F58025
+
+    .divider
+      padding: 0 7px
+      color: #F58025
+
+  .qr
+    position: absolute
+    left: 50px
+    top: 40px
+    width: 220px
+    line-height: 130%
+    height: 325px
+    font-size:23px
+    color: #ffffff
+
+    .qrcode
+      width: 215px
+      height: 215px
+
+  .mottoBox
+    position: absolute
+    color: #ffffff
+    bottom: 40px
+    right: 50px
+    font-size: 23px
+    line-height: 130%
+
+
+    .bubbles
+      background: url(../img/img/bubbles.png) no-repeat top center
+      height: 40px
+      width: 180px
+
 
 a.button
   color: blue
@@ -48,7 +156,7 @@ ul.nav
     background: url(../img/rig.png) no-repeat center left 
     height: 70px
     padding-left:165px
-    border-bottom: 3px solid #EB8F00
+    border-bottom: 3px solid #F58025
 
     h1
       padding-top: 17px
@@ -91,7 +199,7 @@ ul.nav
     font-weight: bold;
 
     em
-      color: #EB8F00;
+      color: #F58025;
 
     button
       position: absolute;
@@ -174,7 +282,6 @@ ul.purchasedList
   list-style: none
 
   li
-    height: 60px
     padding: 10px 15px 10px 0
     font-weight: bold
     border-bottom: 2px solid #d2d2d1;
