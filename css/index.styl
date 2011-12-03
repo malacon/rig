@@ -40,6 +40,7 @@
 
 .businessCard
   position: relative
+  display: block
   height: 468px
   padding: 5px
   border: 1px dotted black
@@ -90,7 +91,6 @@
     .divider
       padding: 0 7px
       color: #F58025
-
   .qr
     position: absolute
     left: 50px
@@ -108,16 +108,32 @@
   .mottoBox
     position: absolute
     color: #ffffff
-    bottom: 40px
-    right: 50px
+    bottom: 70px
+    right: 40px
     font-size: 23px
     line-height: 130%
 
 
     .bubbles
-      background: url(../img/img/bubbles.png) no-repeat top center
-      height: 40px
-      width: 180px
+      background: url(../img/bubbles.png) no-repeat top center
+      height: 63px
+      width: 242px
+
+    .motto
+      position: absolute
+      right: 0px
+
+  .noqr
+    .bubbles
+      width: 384px
+      height: 66px
+      position: absolute
+      bottom: 0px
+      right: 130px
+      background: url(../img/bubblesNoQR.png) no-repeat top center
+
+    .motto
+      width: 200px
 
 
 a.button

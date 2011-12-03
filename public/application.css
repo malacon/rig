@@ -42,6 +42,7 @@
 }
 .businessCard {
   position: relative;
+  display: block;
   height: 468px;
   padding: 5px;
   border: 1px dotted #000;
@@ -110,15 +111,30 @@
 .card .mottoBox {
   position: absolute;
   color: #fff;
-  bottom: 40px;
-  right: 50px;
+  bottom: 70px;
+  right: 40px;
   font-size: 23px;
   line-height: 130%;
 }
 .card .mottoBox .bubbles {
-  background: url("../img/img/bubbles.png") no-repeat top center;
-  height: 40px;
-  width: 180px;
+  background: url("../img/bubbles.png") no-repeat top center;
+  height: 63px;
+  width: 242px;
+}
+.card .mottoBox .motto {
+  position: absolute;
+  right: 0px;
+}
+.card .noqr .bubbles {
+  width: 384px;
+  height: 66px;
+  position: absolute;
+  bottom: 0px;
+  right: 130px;
+  background: url("../img/bubblesNoQR.png") no-repeat top center;
+}
+.card .noqr .motto {
+  width: 200px;
 }
 a.button {
   color: #00f;
