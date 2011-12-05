@@ -5,6 +5,7 @@ require("lib/jquery.html5form")
 require("lib/jquery.ui")
 require("lib/jquery.layout")
 require("lib/jquery.layout.resizeAccordion")
+require("lib/jquery.maskedinput-1.3")
 
 require('spine')
 require('spine/lib/local')
