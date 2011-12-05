@@ -1,4 +1,5 @@
-<li class="item <%= @type %>">
-  <%= @name %>
-</li>
-
+<% if (@type is 'cards' and @isOriginal) || @type isnt 'cards': %>
+  <li class="item <%= @type %>">
+    <%= @name %>
+  </li>
+<% end %>

@@ -7,57 +7,7 @@
   </ul>
 </header>
 
-<div class="content">
-  <div class="businessCard">
-    <div class="card cardFront">
-      <div class="name">
-        <span class="who">Morten Hagland Hansen</span><br />
-        <span class="title">VP, Global Engineering & Operations</span><br />
-        <span class="email">hansen@rig.net</span>
-      </div>
-      <div class="logo"></div>
-      <div class="info">
-        <span class="address">1880 S. Dairy Ashford Suite 300</span><span class="divider">|</span><span class="citySt">Houston, TX 77077 USA</span><br />
-        <span class="direct">+1.281.674.0122 <span class="numberType">direct</span></span><span class="divider">|</span><span class="tel">+1.281.674.0100 <span class="numberType">tel</span></span><span class="divider">|</span><span class="cell">+1.832.661.1835 <span class="numberType">cell</span></span><br />
-        <span class="fax">+1.281.674.0101 <span class="numberType">fax</span></span><span class="divider">|</span><span class="website">rig.net</span>
-      </div>
-    </div>
-    <div class="card cardBack">
-      <div class="qr hidden">
-        <div class="qrcode" style="background:url(http://api.qrserver.com/v1/create-qr-code/?data=BEGIN%3AVCARD%0AFN%3ACraig%20Baker%0ATEL%3A5043833130%0AEMAIL%3Acraigb%40st-george.org%0AURL%3Ahttp%3A%2F%2Fwww.st-georgeschool.com%0AN%3ABaker%3BCraig%0AADR%3A7880%20St.%20George%20Drive%3B70809%3BBaton%20Rouge%0AORG%3ASt.%20George%20Catholic%20School%0AROLE%3Ateacher%0AVERSION%3A3.0%0AEND%3AVCARD%0A&size=215x215&margin=12&qzone=1&color=F58025) no-repeat top center"></div>
-        <span class="instructions">scan with smart phone.</span>
-      </div>
-      <div class="mottoBox noqr">
-        <div class="bubbles"></div>
-        <div class="motto">always connected.</div>
-      </div>
-    </div>
-  </div>
-  <div class="businessCard">
-    <div class="card cardFront">
-      <div class="name">
-        <span class="who">Morten Hagland Hansen</span><br />
-        <span class="title">VP, Global Engineering & Operations</span><br />
-        <span class="email">hansen@rig.net</span>
-      </div>
-      <div class="logo"></div>
-      <div class="info">
-        <span class="address">1880 S. Dairy Ashford Suite 300</span><span class="divider">|</span><span class="citySt">Houston, TX 77077 USA</span><br />
-        <span class="direct">+1.281.674.0122 <span class="numberType">direct</span></span><span class="divider">|</span><span class="tel">+1.281.674.0100 <span class="numberType">tel</span></span><span class="divider">|</span><span class="cell">+1.832.661.1835 <span class="numberType">cell</span></span><br />
-        <span class="fax">+1.281.674.0101 <span class="numberType">fax</span></span><span class="divider">|</span><span class="website">rig.net</span>
-      </div>
-    </div>
-    <div class="card cardBack">
-      <div class="qr">
-        <div class="qrcode" style="background:url(http://api.qrserver.com/v1/create-qr-code/?data=BEGIN%3AVCARD%0AFN%3ACraig%20Baker%0ATEL%3A5043833130%0AEMAIL%3Acraigb%40st-george.org%0AURL%3Ahttp%3A%2F%2Fwww.st-georgeschool.com%0AN%3ABaker%3BCraig%0AADR%3A7880%20St.%20George%20Drive%3B70809%3BBaton%20Rouge%0AORG%3ASt.%20George%20Catholic%20School%0AROLE%3Ateacher%0AVERSION%3A3.0%0AEND%3AVCARD%0A&size=215x215&margin=12&qzone=1&color=F58025) no-repeat top center"></div>
-        <span class="instructions">scan with smart phone.</span>
-      </div>
-      <div class="mottoBox">
-        <div class="bubbles"></div>
-        <div class="motto">always connected.</div>
-      </div>
-    </div>
-  </div>
+<div class="content">  
   <ul class="purchasedList">
   </ul>
 </div>

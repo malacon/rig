@@ -1,13 +1,16 @@
 Spine = require('spine')
 
 class Item extends Spine.Model
-  @configure 'Item', 'name', 'type', 'costMatrix', 'quantity', 'details'
+  @configure 'Item', 'name', 'type', 'costMatrix', 'quantity', 'details', 'isOriginal', 'qrCost'
 
   @endpoint: 'http://localhost:9294/data.json'
 
   @fetch: ->
     $.getJSON(@endpoint, (res) => @refresh(res, clear: true))
   
+  save: ->
+    super
+
   getCost: ->
     @costMatrix[@quantity]
 
@@ -46,6 +49,11 @@ class Item extends Spine.Model
       item.quantity = 0
       item.save()
   
+  @allToString: ->
+    result = []
+    @select (item) ->
+      result.push("#{item.name} #{item.quantity}")
+    result
 
   @getItemsByTypeArr: (types) ->
     items = {}
