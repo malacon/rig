@@ -34,15 +34,24 @@
   margin-left: 340px;
   z-index: 10;
   background: #fff;
+  -webkit-box-shadow: 2px 4px 10px 4px rgba(1,1,1,0.50);
+  -moz-box-shadow: 2px 4px 10px 4px rgba(1,1,1,0.50);
+  -moz-box-shadow: 2px 4px 10px 4px rgba(1,1,1,0.50);
+  -webkit-box-shadow: 2px 4px 10px 4px rgba(1,1,1,0.50);
+  box-shadow: 2px 4px 10px 4px rgba(1,1,1,0.50);
 }
 .cardBack {
   margin-top: 140px;
   z-index: 5;
   background: #f58025;
+  -webkit-box-shadow: 2px 4px 10px 4px rgba(1,1,1,0.50);
+  -moz-box-shadow: 2px 4px 10px 4px rgba(1,1,1,0.50);
+  -moz-box-shadow: 2px 4px 10px 4px rgba(1,1,1,0.50);
+  -webkit-box-shadow: 2px 4px 10px 4px rgba(1,1,1,0.50);
+  box-shadow: 2px 4px 10px 4px rgba(1,1,1,0.50);
 }
 .businessCard {
   position: relative;
-  display: block;
   height: 468px;
   padding: 5px;
   border: 1px dotted #000;
@@ -59,12 +68,12 @@
   font-weight: lighter;
   color: #807f83;
 }
-.card .name {
+.card .who {
   position: absolute;
   top: 30px;
   right: 50px;
 }
-.card .name .who {
+.card .who .name {
   color: #f58025;
   font-size: 18px;
   font-weight: normal;
@@ -107,6 +116,7 @@
 .card .qr .qrcode {
   width: 215px;
   height: 215px;
+  background: url("http://api.qrserver.com/v1/create-qr-code/?data=BEGIN%3AVCARD%0AVERSION%3A2.1%0AN%3A%3B%3B%3B%3B%0AADR%3BINTL%3BPARCEL%3BWORK%3A%3B%3B1880%20S.%20Dairy%20Ashford%20Suite%20300%3BHouston%3BTX%3B70809%3BUSA%0AEMAIL%3BINTERNET%3Acraigb%40st-george.org%0AORG%3ARigNet%0ATEL%3BWORK%3A5043833130%0ATEL%3BWORK%3BFAX%3A4033322221%0ATEL%3BCELL%3A5043833130%0ATEL%3BWORK%3BDIRECT%3A5043833130%0ATITLE%3ATeacher%0AURL%3BWORK%3Arig.net%0AEND%3AVCARD%0A&size=215x215&margin=12&qzone=1&color=F58025") no-repeat top center;
 }
 .card .mottoBox {
   position: absolute;
@@ -232,9 +242,6 @@ ul.nav li {
 }
 .ui-layout-west .content button,
 .ui-layout-center .content button {
-  position: absolute;
-  top: 85px;
-  left: 380px;
   width: 88px;
 }
 .ui-layout-west .content li button,
@@ -313,6 +320,7 @@ ul.purchasedList {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 912px;
 }
 ul.purchasedList li {
   padding: 10px 15px 10px 0;
@@ -432,7 +440,7 @@ input[type="password"] {
   text-shadow: 0 1px 1px #fff;
   font-size: 17px;
   outline: none;
-  padding: 10px;
+  padding: 0 10px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
